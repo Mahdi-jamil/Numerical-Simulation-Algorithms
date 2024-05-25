@@ -2,6 +2,9 @@ package ODE_numerically;
 
 import static ODE_numerically.Functions.fx;
 
+/***
+ * @author Mahdi Jamil
+ */
 public class RangeKutta {
 
     public static double rangeKutta(int n, double h, double x0, double t0) {

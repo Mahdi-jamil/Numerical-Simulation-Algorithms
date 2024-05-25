@@ -1,5 +1,8 @@
 package root;
 
+/***
+ * @author Mahdi Jamil
+ */
 public class Functions {
     private Functions() {}
 

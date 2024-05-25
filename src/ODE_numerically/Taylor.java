@@ -3,6 +3,9 @@ package ODE_numerically;
 import static ODE_numerically.Functions.fx;
 import static ODE_numerically.Functions.dfx;
 
+/***
+ * @author Mahdi Jamil
+ */
 public class Taylor {
 
     public static double euler(int n, double h, double x0, double t0) {

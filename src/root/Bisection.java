@@ -2,6 +2,9 @@ package root;
 
 import static root.Functions.fx;
 
+/***
+ * @author Mahdi Jamil
+ */
 public class Bisection {
 
     public static double bisection(double left, double right, double eps) {

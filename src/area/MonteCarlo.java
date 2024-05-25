@@ -2,6 +2,9 @@ package area;
 
 import java.util.Random;
 
+/***
+ * @author Mahdi Jamil
+ */
 public class MonteCarlo {
 
     private static boolean isInsideTheShape(double x, double y) {

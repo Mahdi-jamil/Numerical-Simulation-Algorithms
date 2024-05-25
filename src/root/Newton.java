@@ -3,6 +3,9 @@ package root;
 import static root.Functions.dfx;
 import static root.Functions.fx;
 
+/***
+ * @author Mahdi Jamil
+ */
 public class Newton {
 
     public static double newton(double x0, double tolerance, int maxIteration) {

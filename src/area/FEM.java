@@ -1,5 +1,8 @@
 package area;
 
+/***
+ * @author Mahdi Jamil
+ */
 public class FEM {
 
     public static double f(double x) {

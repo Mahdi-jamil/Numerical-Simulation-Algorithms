@@ -1,5 +1,7 @@
 package ODE_numerically;
-
+/***
+ * @author Mahdi Jamil
+ */
 public final class Functions {
 
     public static double fx(double t, double x) {
