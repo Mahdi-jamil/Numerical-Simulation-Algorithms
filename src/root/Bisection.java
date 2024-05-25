@@ -9,7 +9,7 @@ public class Bisection {
 
     public static double bisection(double left, double right, double eps) {
         if (fx(left) * fx(right) >= 0) {
-            System.out.println("You have not assumed right a and b ");
+            System.out.println("You have not assumed right left and right ");
             return -1;
         }
 
