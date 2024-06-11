@@ -87,7 +87,7 @@ public class FEM {
         while (right <= b) {
             System.out.println("Interval [" + left + " , " + right + "]");
             double midpoint = (left + right) / 2;
-            result += h * midpoint;
+            result += h * f(midpoint);
             left = right;
             right += h;
         }
