@@ -13,7 +13,7 @@ public class Main {
         double actualValue = 1.718281828;
 
 
-        double area = MonteCarlo.monteCarlo(numPoints);
+        double area = MonteCarlo.enhancedMonteCarlo(a,b);
         System.out.println("MonteCarlo value : " + area);
 
         area = FEM.FLeft(a, b, h);

@@ -7,30 +7,18 @@ import java.util.Random;
  */
 public class MonteCarlo {
 
-    private static boolean isInsideTheShape(double x, double y) {
-        return f(x, y) <= 1; // any function represent a shape
+    private static double f(double x) {
+        return x * x;
     }
 
-    private static double f(double x, double y) {
-        return x * x + y * y;
-    }
-
-    public static double monteCarlo(int numPoints) {
+    public static double enhancedMonteCarlo(double a, double b) {
         Random random = new Random();
-        int pointsInsideCircle = 0;
-
-        for (int i = 0; i < numPoints; i++) {
-            double x = random.nextDouble();
-            double y = random.nextDouble();
-
-            // Check if the point (x, y) is inside the unit shape
-            if (isInsideTheShape(x, y)) {
-                pointsInsideCircle++;
-            }
+        double sum = 0;
+        int N = 30; // Choose N uniformly and randomly distributed points 𝑥𝑖 inside [𝑎, 𝑏]
+        for (int i = 0; i < N; i++) {
+            sum += f(random.nextDouble(a, b));
         }
-
-        double totalArea = 4.0;
-        return totalArea * pointsInsideCircle / numPoints;
+        return ((b - a) / N) * sum;
     }
 
 
